@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>sign in || petflix.com</title>
+</head>
+
+<body>
+    <main class="sign-in-form">
+        <div class="max-width">
+            <div class="flex flex-item-last">
+                <a href="index.html" class="btn btn-pri trans-time btn-shadow inline-block">home</a>
+            </div>
+            <!-- sign in module -->
+            <div class="accordion-link mt-2 flex flex-wrap flex-center">
+                <button class="accordion-btn accordion-btn-black active create-account-btn ">Create Account</button>
+                <button class="accordion-btn accordion-btn-black sign-in-btn">Sign in</button>
+            </div>
+
+
+            <div class="accordion-exp">
+                <div class="max-width">
+
+                    <div class="accordion-info mt-1" id="create-account-info">
+                        <form class="create-account">
+                            <div>
+                                <label for="first name" class="label">Enter First Name</label>
+                                <div></div>
+                                <input type="text" placeholder="Your name" class="label-input">
+                            </div>
+                            <div>
+                                <label for="name" class="label">Enter Last name</label>
+                                <div></div>
+                                <input type="text" placeholder="Your Last name" class="label-input">
+                            </div>
+                            <div>
+                                <label for="email" class="label">Email</label>
+                                <div></div>
+                                <input type="email" placeholder="Enter your email" class="label-input">
+                            </div>
+
+                            <div>
+                                <label for="password" class="label">Password</label>
+                                <div></div>
+                                <input type="password" placeholder="Password" class="label-input">
+                            </div>
+                            <div>
+                                <label for="password" class="label"> Conform Password</label>
+                                <div></div>
+                                <input type="password" placeholder="Conform Password" class="label-input">
+                            </div>
+                            <div>
+                                <button class="btn btn-pri mt-1">Create Account</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                    <div class="accordion-info mt-3 display-none" id="sign-in-info">
+                        <form class="create-account">
+                            <div>
+                                <label for="name" class="label">Name</label>
+                                <div></div>
+                                <input type="text" placeholder="enter your name" class="label-input">
+                            </div>
+                            <div>
+                                <label for="password" class="label">Password</label>
+                                <div></div>
+                                <input type="password" placeholder="Password" class="label-input">
+                            </div>
+                            <div>
+                                <button class="btn btn-pri mt-1">Sign in</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<script src="./script/form-validation.js"></script>
+</body>
+
+</html>

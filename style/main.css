@@ -1,0 +1,364 @@
+/* css reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+}
+button,
+button:focus {
+  border: none;
+  outline: none;
+}
+:root {
+  /* css variables */
+  --pri-color: rgb(255, 18, 18);
+  --pri-fade-color: rgb(230, 6, 6);
+  --fade-black: rgb(72, 66, 66);
+}
+
+/* utility classes */
+.max-width {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input[type="text"] {
+  font-weight: lighter;
+}
+.btn {
+  padding: 0.4rem 1.8rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.btn-pri {
+  color: #ffffff;
+  background-color: var(--pri-color);
+}
+.btn-pri:hover {
+  background-color: var(--pri-fade-color);
+}
+.btn-shadow {
+  box-shadow: 2px 3px 8px black;
+}
+.trans-time {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+.text-center {
+  text-align: center;
+}
+.inline-block {
+  display: inline-block;
+}
+/* margin-helper classes */
+.mt-1 {
+  margin-top: 1em;
+}
+.mt-2 {
+  margin-top: 2em;
+}
+.mt-3 {
+  margin-top: 3em;
+}
+.ml-1 {
+  margin-left: 1em;
+}
+.ml-2 {
+  margin-left: 2em;
+}
+.ml-3 {
+  margin-left: 3em;
+}
+.mr-1 {
+  margin-right: 1em;
+}
+.m-auto {
+  margin: intial auto;
+}
+/* padding mobile first padding*/
+.padding-inner {
+  padding: 2em;
+}
+.txt-padding {
+  padding: 0.3em;
+}
+.para-font {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+.section-image {
+  width: 95%;
+}
+/* positon relative moudly */
+.pos-relative {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.newsletter {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 0.5em;
+  border: none;
+  border-bottom: 2px solid var(--pri-fade-color);
+  margin-right: 0.5em;
+}
+.newsletter:focus {
+  outline: none;
+  /* background-color: var(--pri-color); */
+}
+/* main header */
+.main-header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/main-background.jpg");
+}
+.main-header * {
+  color: #ffffff;
+}
+/*general style for logo*/
+.logo {
+  font-size: 1.9rem;
+  letter-spacing: 0.1em;
+}
+/* background-image module */
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* total of parent area module */
+.overlay {
+  width: 100%;
+  height: 100%;
+}
+.pri-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+/* flex module */
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 0.4em;
+}
+.flex-end {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-item-last {
+  justify-content: flex-end;
+}
+/*main heading slogan*/
+.main-heading-slogan > h2::before {
+  content: "WATCH";
+  font-size: 1.9rem;
+  color: var(--pri-color);
+  margin-right: 0.2em;
+  text-shadow: 2px 3px 8px #000000;
+}
+
+/* section lead style */
+.bg-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+.bg-white {
+  background-color: #ffffff;
+  color: #000000;
+}
+.section-lead h2::before {
+  content: "WHY";
+  font-size: 2rem;
+  color: var(--pri-color);
+  margin-right: 0.2em;
+}
+/* module for two section using grid; */
+.two-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+/* image style module */
+.img-shadow {
+  box-shadow: 7px 4px 20px rgba(56, 56, 56, 0.93);
+}
+
+/* sectin-content */
+.section-content h2::before {
+  content: "Watch";
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--pri-color);
+  margin-right: 0.2em;
+}
+
+/* content type section */
+.content-type h2::before {
+  content: "for";
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--pri-color);
+  margin-right: 0.15em;
+}
+/*accordion module for three section*/
+.accordion-link {
+  width: 100%;
+}
+.accordion-btn {
+  font-size: 1.3rem;
+  padding: 0.3em;
+  margin: 0.1em;
+}
+.accordion-btn-black {
+  background-color: var(--fade-black);
+  color: #ffffff;
+}
+.accordion-btn-black:hover {
+  background-color: var(--pri-fade-color);
+}
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+.active {
+  background-color: var(--pri-color);
+}
+
+/* section frequently Question */
+
+/* frequently asked question module */
+.faq {
+  padding: 2em;
+}
+.faq-question {
+  font-size: 1.2rem;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.3em;
+  margin: 0.2em auto;
+}
+.faq-hide {
+  height: 0;
+  overflow: hidden;
+}
+.open-answer {
+  color: var(--pri-fade-color);
+  font-weight: bolder;
+  font-size: 1.3em;
+  margin-right: 0.1em;
+  cursor: pointer;
+}
+/*js affected class*/
+.bg-primary {
+  background-color: var(--pri-fade-color);
+}
+.txt-white {
+  color: #ffffff;
+}
+/* footer */
+.social-media-heading {
+  color: var(--pri-color);
+}
+.social-media-link img {
+  display: inline-block;
+  margin: 1em;
+}
+.social-media-link img:hover {
+  transform: scale(1.2);
+}
+/* sign in module */
+.sign-in-form {
+  min-height: 100vh;
+}
+.label {
+  font-size: 1.5rem;
+  padding: 0.2em;
+  margin-bottom: 0.1em;
+}
+.label-input {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.4em;
+  border: none;
+  border: 1px solid var(--fade-black);
+  margin-bottom: 0.8em;
+  border-radius: 0.4em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.label-input:focus {
+  outline: 0;
+}
+form.create-account {
+  margin: auto;
+  width: 95%;
+  padding: 0.8em;
+  box-shadow: 5px 4px 20px 0px black;
+}
+
+/* mobile first responsive media query */
+@media (max-width: 500px) {
+  .accordion-btn {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .accordion-btn {
+    padding: 0.8em 1.2em;
+  }
+  .faq {
+    padding: 5em;
+  }
+  .faq-question {
+    font-size: 1.4rem;
+  }
+  .padding-inner {
+    padding: 5em;
+  }
+  form.create-account {
+    margin: auto;
+    width: 80%;
+    padding: 2em;
+    box-shadow: 5px 4px 20px 0px black;
+  }
+}
+@media (min-width: 900px) {
+  .section-image {
+    width: 90%;
+  }
+  .two-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .accordion-btn {
+    padding: 1em 1.5em;
+  }
+  /*padding: 1.1em 2em;
+    margin: 0 .3em;
+    font-size:  1.3em;*/
+}
